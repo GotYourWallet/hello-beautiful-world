@@ -2,10 +2,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
 
-const appBase = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(appBase),
+  metadataBase: new URL(baseUrl),
   title: "Hello, Beautiful World",
   description: "Tiny Next.js + Tailwind starter with Docker & Azure",
   openGraph: { title: "Hello, Beautiful World", images: ["/og-image.png"] },
