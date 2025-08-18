@@ -9,6 +9,9 @@ on:
 jobs:
   build-test:
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_GITHUB_URL: https://github.com/GotYourWallet/hello-beautiful-world
+      NEXT_PUBLIC_BASE_URL: https://hellobeautifulworld.azurewebsites.net
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
